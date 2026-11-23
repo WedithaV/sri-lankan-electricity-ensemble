@@ -1,0 +1,20 @@
+{
+  "experiment": "robust_R1_excl34",
+  "model_key": "voting",
+  "label": "voting",
+  "model": "Voting Regressor",
+  "family": "Ensemble combination",
+  "feature_set": "history_only",
+  "cv_MAE": 18.90549851860352,
+  "cv_MAE_std": 2.3037852910096372,
+  "cv_RMSE": 43.03580544366311,
+  "cv_R2": 0.8890074945897644,
+  "train_MAE": 16.014262021852186,
+  "test_MAE": 19.764004562532648,
+  "test_RMSE": 45.026105792264744,
+  "test_R2": 0.8820549380757127,
+  "test_n": 19999,
+  "cv_fit_seconds_mean": 178.0934094999684,
+  "fit_seconds_full": 347.54402370000025,
+  "predict_ms_per_1000_rows": 52.7917095828587
+}

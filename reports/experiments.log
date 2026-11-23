@@ -1,0 +1,40 @@
+[22:00:19] === stage tuned ===
+[22:00:54] tuned        random_forest      history_only         cv_MAE 19.226  test_MAE 19.601  test_RMSE 43.68  (35s)
+[22:01:21] tuned        extra_trees        history_only         cv_MAE 19.245  test_MAE 20.059  test_RMSE 44.09  (27s)
+[22:13:54] tuned        gradient_boosting  history_only         cv_MAE 18.907  test_MAE 20.021  test_RMSE 45.49  (752s)
+[22:14:05] tuned        xgboost            history_only         cv_MAE 19.054  test_MAE 20.374  test_RMSE 50.09  (12s)
+[22:14:05] members chosen from validation MAE: {'voting_members': ['gradient_boosting', 'xgboost', 'random_forest'], 'stacking_tree_bases': ['random_forest', 'gradient_boosting']}
+Traceback (most recent call last):
+  File "scripts\run_experiments.py", line 172, in <module>
+    stages[st]()
+    ~~~~~~~~~~^^
+  File "scripts\run_experiments.py", line 96, in stage_tuned
+    run("voting", "tuned")
+    ~~~^^^^^^^^^^^^^^^^^^^
+  File "scripts\run_experiments.py", line 77, in run
+    s, *_ = run_model(key, est, feature_set, experiment, train=train, test=test, label=label)
+            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src\train.py", line 46, in run_model
+    cv, oof = cross_validate_time(model, train, feature_set)
+              ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "src\evaluate.py", line 43, in cross_validate_time
+    m.fit(X.iloc[tr], y[tr])
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+  File ".venv\Lib\site-packages\sklearn\base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File ".venv\Lib\site-packages\sklearn\pipeline.py", line 645, in fit
+    self._final_estimator.fit(Xt, y, **last_step_params["fit"])
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ".venv\Lib\site-packages\sklearn\base.py", line 1403, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+  File ".venv\Lib\site-packages\sklearn\ensemble\_voting.py", line 682, in fit
+    return super().fit(X, y, **fit_params)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File ".venv\Lib\site-packages\sklearn\ensemble\_voting.py", line 81, in fit
+    names, clfs = self._validate_estimators()
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File ".venv\Lib\site-packages\sklearn\ensemble\_base.py", line 243, in _validate_estimators
+    raise ValueError(
+    ...<3 lines>...
+    )
+ValueError: The estimator OptionalLogTarget should be a regressor.

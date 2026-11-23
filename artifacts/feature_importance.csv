@@ -1,0 +1,105 @@
+feature,importance,importance_std,method,model
+lag_1,37.00343445781506,0.1511298038845694,"permutation (test period, increase in MAE kWh)",voting
+lag_2,2.4256637408292017,0.06315653211321832,"permutation (test period, increase in MAE kWh)",voting
+lag_3,0.33748365758758114,0.04615912699625974,"permutation (test period, increase in MAE kWh)",voting
+lag_6,0.09246278509880099,0.010777766478884135,"permutation (test period, increase in MAE kWh)",voting
+lag_12,-0.004589632005261279,0.007927833412763355,"permutation (test period, increase in MAE kWh)",voting
+roll_mean_3,10.86355332610784,0.08980839643714811,"permutation (test period, increase in MAE kWh)",voting
+roll_mean_6,0.7349342394397838,0.01700739525685856,"permutation (test period, increase in MAE kWh)",voting
+roll_median_3,2.261642045103207,0.05807094265617783,"permutation (test period, increase in MAE kWh)",voting
+roll_std_6,0.015319526711906662,0.004781281866299181,"permutation (test period, increase in MAE kWh)",voting
+hist_mean,3.555625218002946,0.038304477007267586,"permutation (test period, increase in MAE kWh)",voting
+hist_max,0.19908529254437396,0.013537478919286142,"permutation (test period, increase in MAE kWh)",voting
+change_1,0.21709721307816565,0.015018219597144881,"permutation (test period, increase in MAE kWh)",voting
+zero_count_6,0.0026676069742208597,0.006793724547643265,"permutation (test period, increase in MAE kWh)",voting
+missing_count_6,0.0034898152079293255,0.0006743708953882346,"permutation (test period, increase in MAE kWh)",voting
+month_of_year,-0.6990458675101501,0.021599342249285666,"permutation (test period, increase in MAE kWh)",voting
+month_sin,-0.448572900614581,0.003950421685265303,"permutation (test period, increase in MAE kWh)",voting
+month_cos,-0.47127829356845724,0.02174376253176796,"permutation (test period, increase in MAE kWh)",voting
+lag_1,0.9071539204917728,,built-in (impurity / gain),gradient_boosting
+lag_2,0.006692999349959295,,built-in (impurity / gain),gradient_boosting
+lag_3,0.0006985259395345328,,built-in (impurity / gain),gradient_boosting
+lag_6,0.0011563126773366556,,built-in (impurity / gain),gradient_boosting
+lag_12,0.0004578587868389607,,built-in (impurity / gain),gradient_boosting
+roll_mean_3,0.045301404060705944,,built-in (impurity / gain),gradient_boosting
+roll_mean_6,0.004345812056700633,,built-in (impurity / gain),gradient_boosting
+roll_median_3,0.01069009555348038,,built-in (impurity / gain),gradient_boosting
+roll_std_6,0.0016292778955418238,,built-in (impurity / gain),gradient_boosting
+hist_mean,0.011234662501532254,,built-in (impurity / gain),gradient_boosting
+hist_max,0.0018425348749301176,,built-in (impurity / gain),gradient_boosting
+change_1,0.002365687744197308,,built-in (impurity / gain),gradient_boosting
+zero_count_6,0.0009110037596962317,,built-in (impurity / gain),gradient_boosting
+missing_count_6,6.332703347832268e-05,,built-in (impurity / gain),gradient_boosting
+month_of_year,0.0015866092017519872,,built-in (impurity / gain),gradient_boosting
+month_sin,0.000965785883625794,,built-in (impurity / gain),gradient_boosting
+month_cos,0.0022970986423431687,,built-in (impurity / gain),gradient_boosting
+missingindicator_lag_1,2.069648472519567e-05,,built-in (impurity / gain),gradient_boosting
+missingindicator_lag_2,2.930159213767959e-05,,built-in (impurity / gain),gradient_boosting
+missingindicator_lag_3,8.94843373202816e-06,,built-in (impurity / gain),gradient_boosting
+missingindicator_lag_6,0.00046273845182995537,,built-in (impurity / gain),gradient_boosting
+missingindicator_lag_12,3.9193609678330955e-05,,built-in (impurity / gain),gradient_boosting
+missingindicator_roll_mean_3,0.0,,built-in (impurity / gain),gradient_boosting
+missingindicator_roll_mean_6,0.0,,built-in (impurity / gain),gradient_boosting
+missingindicator_roll_median_3,0.0,,built-in (impurity / gain),gradient_boosting
+missingindicator_roll_std_6,1.5157297820709894e-05,,built-in (impurity / gain),gradient_boosting
+missingindicator_hist_mean,0.0,,built-in (impurity / gain),gradient_boosting
+missingindicator_hist_max,0.0,,built-in (impurity / gain),gradient_boosting
+missingindicator_change_1,3.1047676649909006e-05,,built-in (impurity / gain),gradient_boosting
+lag_1,0.272098183631897,,built-in (impurity / gain),xgboost
+lag_2,0.0021136265713721514,,built-in (impurity / gain),xgboost
+lag_3,0.0016003171913325787,,built-in (impurity / gain),xgboost
+lag_6,0.005220556631684303,,built-in (impurity / gain),xgboost
+lag_12,0.0005912726046517491,,built-in (impurity / gain),xgboost
+roll_mean_3,0.591433048248291,,built-in (impurity / gain),xgboost
+roll_mean_6,0.021752210333943367,,built-in (impurity / gain),xgboost
+roll_median_3,0.0353892482817173,,built-in (impurity / gain),xgboost
+roll_std_6,0.0009198773768730462,,built-in (impurity / gain),xgboost
+hist_mean,0.024895204231142998,,built-in (impurity / gain),xgboost
+hist_max,0.01580805703997612,,built-in (impurity / gain),xgboost
+change_1,0.0026438140776008368,,built-in (impurity / gain),xgboost
+zero_count_6,0.008639448322355747,,built-in (impurity / gain),xgboost
+missing_count_6,0.0007727195625193417,,built-in (impurity / gain),xgboost
+month_of_year,0.003941462375223637,,built-in (impurity / gain),xgboost
+month_sin,0.0018944921903312206,,built-in (impurity / gain),xgboost
+month_cos,0.0035328350495547056,,built-in (impurity / gain),xgboost
+missingindicator_lag_1,0.00043434702092781663,,built-in (impurity / gain),xgboost
+missingindicator_lag_2,0.0009588751127012074,,built-in (impurity / gain),xgboost
+missingindicator_lag_3,0.000263772759353742,,built-in (impurity / gain),xgboost
+missingindicator_lag_6,0.002361481310799718,,built-in (impurity / gain),xgboost
+missingindicator_lag_12,0.0009660806390456855,,built-in (impurity / gain),xgboost
+missingindicator_roll_mean_3,0.0002744798257481307,,built-in (impurity / gain),xgboost
+missingindicator_roll_mean_6,0.00029466752312146127,,built-in (impurity / gain),xgboost
+missingindicator_roll_median_3,0.00013137909991201013,,built-in (impurity / gain),xgboost
+missingindicator_roll_std_6,0.0004912734148092568,,built-in (impurity / gain),xgboost
+missingindicator_hist_mean,0.0002131106157321483,,built-in (impurity / gain),xgboost
+missingindicator_hist_max,0.0,,built-in (impurity / gain),xgboost
+missingindicator_change_1,0.0003640998911578208,,built-in (impurity / gain),xgboost
+lag_1,0.3496204596097878,,built-in (impurity / gain),random_forest
+lag_2,0.021627983247763213,,built-in (impurity / gain),random_forest
+lag_3,0.009955213157250327,,built-in (impurity / gain),random_forest
+lag_6,0.003029260633023736,,built-in (impurity / gain),random_forest
+lag_12,0.001721233083896825,,built-in (impurity / gain),random_forest
+roll_mean_3,0.25250042274731005,,built-in (impurity / gain),random_forest
+roll_mean_6,0.06706536901532904,,built-in (impurity / gain),random_forest
+roll_median_3,0.18073373544574547,,built-in (impurity / gain),random_forest
+roll_std_6,0.00508800096049249,,built-in (impurity / gain),random_forest
+hist_mean,0.08288969538348384,,built-in (impurity / gain),random_forest
+hist_max,0.011349636804907994,,built-in (impurity / gain),random_forest
+change_1,0.004585172854881548,,built-in (impurity / gain),random_forest
+zero_count_6,2.9213325844419585e-05,,built-in (impurity / gain),random_forest
+missing_count_6,0.0001385404545522273,,built-in (impurity / gain),random_forest
+month_of_year,0.002842923984859689,,built-in (impurity / gain),random_forest
+month_sin,0.001629924832488002,,built-in (impurity / gain),random_forest
+month_cos,0.00316373599935475,,built-in (impurity / gain),random_forest
+missingindicator_lag_1,0.00017872808629003462,,built-in (impurity / gain),random_forest
+missingindicator_lag_2,4.478580219556636e-06,,built-in (impurity / gain),random_forest
+missingindicator_lag_3,8.412138993662437e-06,,built-in (impurity / gain),random_forest
+missingindicator_lag_6,0.000250622997521108,,built-in (impurity / gain),random_forest
+missingindicator_lag_12,0.0003476060367859691,,built-in (impurity / gain),random_forest
+missingindicator_roll_mean_3,8.202499032500042e-05,,built-in (impurity / gain),random_forest
+missingindicator_roll_mean_6,0.0004537046739189863,,built-in (impurity / gain),random_forest
+missingindicator_roll_median_3,0.0002006402346497749,,built-in (impurity / gain),random_forest
+missingindicator_roll_std_6,7.637181037213034e-05,,built-in (impurity / gain),random_forest
+missingindicator_hist_mean,0.00020761410112733194,,built-in (impurity / gain),random_forest
+missingindicator_hist_max,0.00019100794571967795,,built-in (impurity / gain),random_forest
+missingindicator_change_1,2.8266863105171254e-05,,built-in (impurity / gain),random_forest

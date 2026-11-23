@@ -1,0 +1,13 @@
+# Runtime dependencies for the Streamlit dashboard (used by Streamlit Community Cloud).
+# Versions are pinned exactly: the saved model (models/best_model.joblib) must be loaded
+# with the same scikit-learn / xgboost versions it was trained with.
+# Tested with Python 3.13.
+streamlit==1.67.0
+plotly==7.1.0
+pandas==3.1.1
+numpy==2.5.5
+scikit-learn==1.9.1
+scipy==1.18.1
+xgboost==3.4.1
+joblib==1.6.0
+pyarrow==26.0.1

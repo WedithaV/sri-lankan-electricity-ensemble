@@ -1,0 +1,20 @@
+{
+  "experiment": "posthoc_diagnostic",
+  "model_key": "gradient_boosting",
+  "label": "gradient_boosting",
+  "model": "Gradient Boosting",
+  "family": "Boosting",
+  "feature_set": "diag_no_calendar_no_lag12",
+  "cv_MAE": 19.494615386261003,
+  "cv_MAE_std": 3.776860754905234,
+  "cv_RMSE": 44.40030148766792,
+  "cv_R2": 0.8818165256949049,
+  "train_MAE": 17.215313267673576,
+  "test_MAE": 18.158785688595504,
+  "test_RMSE": 42.64872150662512,
+  "test_R2": 0.8941687491677192,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 175.03880748000228,
+  "fit_seconds_full": 201.5473800000036,
+  "predict_ms_per_1000_rows": 19.386179953741436
+}

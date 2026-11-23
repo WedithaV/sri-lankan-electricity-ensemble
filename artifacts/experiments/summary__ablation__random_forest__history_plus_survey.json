@@ -1,0 +1,20 @@
+{
+  "experiment": "ablation",
+  "model_key": "random_forest",
+  "label": "random_forest",
+  "model": "Random Forest",
+  "family": "Bagging",
+  "feature_set": "history_plus_survey",
+  "cv_MAE": 19.22820918921919,
+  "cv_MAE_std": 2.5157979417219587,
+  "cv_RMSE": 42.87989370809653,
+  "cv_R2": 0.8900623100725404,
+  "train_MAE": 14.582644583397391,
+  "test_MAE": 19.572293865363932,
+  "test_RMSE": 43.76947801553875,
+  "test_R2": 0.8885334318037736,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 13.236831899988465,
+  "fit_seconds_full": 19.026613800029736,
+  "predict_ms_per_1000_rows": 124.41973226066395
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "unseen_households",
+  "model_key": "ridge",
+  "label": "ridge",
+  "model": "Ridge Regression",
+  "family": "Baseline",
+  "feature_set": "history_plus_survey",
+  "test_MAE": 20.58257339690207,
+  "test_RMSE": 44.32901369055573,
+  "test_R2": 0.8856653063060101,
+  "test_n": 20094,
+  "n_group_folds": 5
+}

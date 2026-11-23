@@ -1,0 +1,20 @@
+{
+  "experiment": "ablation",
+  "model_key": "extra_trees",
+  "label": "extra_trees",
+  "model": "Extra Trees",
+  "family": "Bagging",
+  "feature_set": "history_plus_survey",
+  "cv_MAE": 19.2680800912586,
+  "cv_MAE_std": 2.3326353210838024,
+  "cv_RMSE": 42.7923080369476,
+  "cv_R2": 0.8906489119715596,
+  "train_MAE": 12.610955311730887,
+  "test_MAE": 19.67040403988986,
+  "test_RMSE": 43.66522771831748,
+  "test_R2": 0.8890637823863635,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 29.291258459992243,
+  "fit_seconds_full": 54.252335399971344,
+  "predict_ms_per_1000_rows": 36.041499951070506
+}

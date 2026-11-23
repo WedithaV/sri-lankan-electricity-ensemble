@@ -1,0 +1,20 @@
+{
+  "experiment": "main",
+  "model_key": "ridge",
+  "label": "ridge",
+  "model": "Ridge Regression",
+  "family": "Baseline",
+  "feature_set": "history_only",
+  "cv_MAE": 20.805910793747053,
+  "cv_MAE_std": 3.5463509336382635,
+  "cv_RMSE": 45.014307958932875,
+  "cv_R2": 0.8785669821670418,
+  "train_MAE": 18.409310592040576,
+  "test_MAE": 19.889479003289082,
+  "test_RMSE": 43.414030776542894,
+  "test_R2": 0.8903364968090447,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 0.11943038001190871,
+  "fit_seconds_full": 0.14064380002673715,
+  "predict_ms_per_1000_rows": 2.1978351725535132
+}

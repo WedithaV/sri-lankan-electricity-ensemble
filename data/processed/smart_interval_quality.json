@@ -1,0 +1,10 @@
+{
+  "readings": 45613280,
+  "consecutive_pairs": 45605284,
+  "gap_not_15min": 97717,
+  "negative_register_change": 4174,
+  "over_10kwh_in_15min": 4099,
+  "valid_intervals": 45499294,
+  "days_total": 486035,
+  "complete_days": 404180
+}

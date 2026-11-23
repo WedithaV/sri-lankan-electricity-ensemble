@@ -1,0 +1,165 @@
+{
+  "model_label": "voting",
+  "model_name": "Voting Regressor",
+  "family": "Ensemble combination",
+  "feature_set": "history_only",
+  "feature_columns": [
+    "lag_1",
+    "lag_2",
+    "lag_3",
+    "lag_6",
+    "lag_12",
+    "roll_mean_3",
+    "roll_mean_6",
+    "roll_median_3",
+    "roll_std_6",
+    "hist_mean",
+    "hist_max",
+    "change_1",
+    "zero_count_6",
+    "missing_count_6",
+    "month_of_year",
+    "month_sin",
+    "month_cos"
+  ],
+  "feature_descriptions": {
+    "lag_1": "Bill of the previous month (t-1), kWh",
+    "lag_2": "Bill two months before (t-2), kWh",
+    "lag_3": "Bill three months before (t-3), kWh",
+    "lag_6": "Bill six months before (t-6), kWh",
+    "lag_12": "Bill of the same billing month last year (t-12), kWh \u2014 captures seasonality",
+    "roll_mean_3": "Mean of the bills t-3..t-1 (observed months only), kWh",
+    "roll_mean_6": "Mean of the bills t-6..t-1, kWh",
+    "roll_median_3": "Median of the bills t-3..t-1 \u2014 robust to a single spike, kWh",
+    "roll_std_6": "Standard deviation of the bills t-6..t-1 \u2014 how stable the household is, kWh",
+    "hist_mean": "Mean of ALL earlier bills (expanding, up to t-1), kWh \u2014 long-run level",
+    "hist_max": "Highest earlier bill (up to t-1), kWh",
+    "change_1": "lag_1 - lag_2: most recent month-to-month change, kWh",
+    "zero_count_6": "Number of zero bills among t-6..t-1",
+    "missing_count_6": "Number of missing bills among t-6..t-1",
+    "month_of_year": "Calendar month of the billing month (1-12)",
+    "month_sin": "sin(2*pi*month/12) \u2014 cyclic month encoding (Dec is next to Jan)",
+    "month_cos": "cos(2*pi*month/12) \u2014 cyclic month encoding"
+  },
+  "target": "consumption",
+  "unit": "kWh",
+  "prediction_task": "one-month-ahead bill of a known household (billing month t, using bills up to t-1)",
+  "selection_rule": "lowest mean validation MAE over the 5 expanding folds (experiment 'tuned')",
+  "training_period": [
+    "2023-01",
+    "2024-05"
+  ],
+  "validation_months": [
+    "2024-01",
+    "2024-02",
+    "2024-03",
+    "2024-04",
+    "2024-05"
+  ],
+  "test_period": [
+    "2024-06",
+    "2024-10"
+  ],
+  "training_rows": 68485,
+  "test_rows": 20094,
+  "cv_MAE": 18.779777510215734,
+  "cv_RMSE": 42.85044679977546,
+  "cv_R2": 0.8899835727339187,
+  "test_MAE": 19.674781076809445,
+  "test_RMSE": 44.987835203412615,
+  "test_R2": 0.8822415483032353,
+  "hyperparameters": {
+    "ridge_alpha": 1000.0,
+    "xgboost": {
+      "log": true,
+      "params": {
+        "colsample_bytree": 0.7593953108716831,
+        "learning_rate": 0.08215779086695435,
+        "max_depth": 3,
+        "min_child_weight": 1,
+        "n_estimators": 400,
+        "objective": "reg:absoluteerror",
+        "reg_lambda": 0.46377900916067,
+        "subsample": 0.8785217091359153
+      },
+      "cv_MAE": 19.05394046162874,
+      "cv_RMSE": 45.72000587149805,
+      "n_candidates": 30,
+      "search_seconds": 509.8931783000007
+    },
+    "gradient_boosting": {
+      "log": true,
+      "params": {
+        "learning_rate": 0.025043908574120786,
+        "loss": "huber",
+        "max_depth": 5,
+        "min_samples_leaf": 30,
+        "n_estimators": 600,
+        "subsample": 0.798070764044508
+      },
+      "cv_MAE": 18.906588092509253,
+      "cv_RMSE": 43.60284098770415,
+      "n_candidates": 16,
+      "search_seconds": 961.9190511999768
+    },
+    "extra_trees": {
+      "log": false,
+      "params": {
+        "n_estimators": 150,
+        "min_samples_leaf": 5,
+        "max_features": 0.8,
+        "max_depth": null
+      },
+      "cv_MAE": 19.24496020581801,
+      "cv_RMSE": 42.87868873549979,
+      "n_candidates": 12,
+      "search_seconds": 252.38688840001123
+    },
+    "random_forest": {
+      "log": false,
+      "params": {
+        "n_estimators": 150,
+        "min_samples_leaf": 10,
+        "max_samples": null,
+        "max_features": 0.5,
+        "max_depth": 20
+      },
+      "cv_MAE": 19.226090115917213,
+      "cv_RMSE": 42.799141701995474,
+      "n_candidates": 12,
+      "search_seconds": 478.97601310000755
+    }
+  },
+  "model_selection": {
+    "voting_members": [
+      "gradient_boosting",
+      "xgboost",
+      "random_forest"
+    ],
+    "stacking_tree_bases": [
+      "random_forest",
+      "gradient_boosting"
+    ],
+    "final_model": "voting",
+    "final_cv_MAE": 18.779777510215734,
+    "rule": "lowest mean validation MAE over the 5 expanding folds (experiment 'tuned')"
+  },
+  "stacking_meta_weights": null,
+  "dataset": {
+    "name": "RECON-SL (Residential Electricity Consumption Dataset for Sri Lanka)",
+    "publisher": "LIRNEasia with Lanka Electricity Company (LECO)",
+    "doi": "10.21227/n1dk-q860",
+    "zenodo_record": "15023048",
+    "licence": "CC-BY-4.0",
+    "scope": "Households in LECO service areas along Sri Lanka's western/south-western coast"
+  },
+  "trained_at_utc": "2026-11-23T18:44:57+00:00",
+  "fit_seconds": 156.2604901000159,
+  "versions": {
+    "python": "3.13.3",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5"
+  }
+}

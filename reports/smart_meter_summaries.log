@@ -1,0 +1,19 @@
+processing smart_15min_1.csv
+scripts\build_smart_meter_summaries.py:96: Pandas4Warning: Series.dt.dayofweek is deprecated and will be removed in a future version. Use Series.dt.day_of_week instead.
+  iv["day_type"] = np.where(iv["start"].dt.dayofweek >= 5, "Weekend", "Weekday")
+processing smart_15min_2.csv
+scripts\build_smart_meter_summaries.py:96: Pandas4Warning: Series.dt.dayofweek is deprecated and will be removed in a future version. Use Series.dt.day_of_week instead.
+  iv["day_type"] = np.where(iv["start"].dt.dayofweek >= 5, "Weekend", "Weekday")
+processing smart_15min_3.csv
+scripts\build_smart_meter_summaries.py:96: Pandas4Warning: Series.dt.dayofweek is deprecated and will be removed in a future version. Use Series.dt.day_of_week instead.
+  iv["day_type"] = np.where(iv["start"].dt.dayofweek >= 5, "Weekend", "Weekday")
+{
+  "readings": 45613280,
+  "consecutive_pairs": 45605284,
+  "gap_not_15min": 97717,
+  "negative_register_change": 4174,
+  "over_10kwh_in_15min": 4099,
+  "valid_intervals": 45499294,
+  "days_total": 486035,
+  "complete_days": 404180
+}

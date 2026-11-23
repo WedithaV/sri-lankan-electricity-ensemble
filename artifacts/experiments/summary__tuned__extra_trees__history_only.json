@@ -1,0 +1,20 @@
+{
+  "experiment": "tuned",
+  "model_key": "extra_trees",
+  "label": "extra_trees",
+  "model": "Extra Trees",
+  "family": "Bagging",
+  "feature_set": "history_only",
+  "cv_MAE": 19.244960205818014,
+  "cv_MAE_std": 2.387102088749323,
+  "cv_RMSE": 42.87868873549979,
+  "cv_R2": 0.8902341730972136,
+  "train_MAE": 12.77502292700743,
+  "test_MAE": 20.058887414229947,
+  "test_RMSE": 44.08843608883735,
+  "test_R2": 0.8869029483980979,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 4.0450367199839095,
+  "fit_seconds_full": 5.122699800005648,
+  "predict_ms_per_1000_rows": 14.273723497084113
+}

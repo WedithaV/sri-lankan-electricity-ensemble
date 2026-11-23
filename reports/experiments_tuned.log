@@ -1,0 +1,9 @@
+[22:20:42] === stage tuned ===
+[22:20:42] tuned        random_forest      history_only         already done - skipped
+[22:20:42] tuned        extra_trees        history_only         already done - skipped
+[22:20:42] tuned        gradient_boosting  history_only         already done - skipped
+[22:20:42] tuned        xgboost            history_only         already done - skipped
+[22:20:42] members chosen from validation MAE: {'voting_members': ['gradient_boosting', 'xgboost', 'random_forest'], 'stacking_tree_bases': ['random_forest', 'gradient_boosting']}
+[22:34:07] tuned        voting             history_only         cv_MAE 18.780  test_MAE 19.675  test_RMSE 44.99  (805s)
+[22:51:42] tuned        stacking           history_only         cv_MAE 18.981  test_MAE 19.626  test_RMSE 43.83  (1055s)
+[22:51:42] FINAL MODEL (by validation MAE): voting cv_MAE 18.780

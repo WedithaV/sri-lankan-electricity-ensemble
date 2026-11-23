@@ -1,0 +1,5 @@
+[22:42:24] === stage diagnostic ===
+[22:43:06] posthoc_diagnostic random_forest      diag_no_calendar     cv_MAE 20.164  test_MAE 18.773  test_RMSE 42.60  (42s)
+[22:56:34] posthoc_diagnostic gradient_boosting  diag_no_calendar     cv_MAE 20.681  test_MAE 18.204  test_RMSE 42.85  (808s)
+[22:57:11] posthoc_diagnostic random_forest      diag_no_calendar_no_lag12 cv_MAE 19.608  test_MAE 18.815  test_RMSE 42.78  (38s)
+[23:15:11] posthoc_diagnostic gradient_boosting  diag_no_calendar_no_lag12 cv_MAE 19.495  test_MAE 18.159  test_RMSE 42.65  (1080s)

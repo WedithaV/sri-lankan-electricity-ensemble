@@ -1,0 +1,29 @@
+# --- Raw / large data (RECON-SL is ~1.2 GB zipped; download separately, see README) ---
+data/raw/
+data/processed/*.csv
+!data/processed/.gitkeep
+*.zip
+
+# --- Python ---
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+
+# --- Secrets ---
+.env
+.streamlit/secrets.toml
+
+# --- Third-party documentation copied from the LIRNEasia GitHub repo (no licence stated) ---
+# Obtain it from https://github.com/LIRNEasia/SL_electricity_consumption instead.
+docs/official_recon_sl/
+
+# --- Local tools / caches ---
+.ipynb_checkpoints/
+*.tmp

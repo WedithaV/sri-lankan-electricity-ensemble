@@ -1,0 +1,20 @@
+{
+  "experiment": "ablation",
+  "model_key": "ridge",
+  "label": "ridge",
+  "model": "Ridge Regression",
+  "family": "Baseline",
+  "feature_set": "history_plus_survey",
+  "cv_MAE": 21.59869438601446,
+  "cv_MAE_std": 2.987626786943138,
+  "cv_RMSE": 45.68553688230599,
+  "cv_R2": 0.8752087725270851,
+  "train_MAE": 18.37415635559265,
+  "test_MAE": 20.501509599489754,
+  "test_RMSE": 44.1437016487238,
+  "test_R2": 0.886619232761814,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 2.5324357600067744,
+  "fit_seconds_full": 6.563473700021859,
+  "predict_ms_per_1000_rows": 10.987210112946547
+}

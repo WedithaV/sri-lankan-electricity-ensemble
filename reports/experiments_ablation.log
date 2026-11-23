@@ -1,0 +1,8 @@
+[23:05:07] === stage ablation ===
+[23:05:36] ablation     ridge              history_plus_survey  cv_MAE 21.599  test_MAE 20.502  test_RMSE 44.14  (29s)
+[23:07:06] ablation     random_forest      history_plus_survey  cv_MAE 19.228  test_MAE 19.572  test_RMSE 43.77  (90s)
+[23:10:30] ablation     extra_trees        history_plus_survey  cv_MAE 19.268  test_MAE 19.670  test_RMSE 43.67  (204s)
+[23:43:56] ablation     gradient_boosting  history_plus_survey  cv_MAE 18.859  test_MAE 19.979  test_RMSE 45.52  (2007s)
+[23:44:17] ablation     xgboost            history_plus_survey  cv_MAE 19.188  test_MAE 20.239  test_RMSE 49.88  (21s)
+[00:11:54] ablation     voting             history_plus_survey  cv_MAE 18.788  test_MAE 19.573  test_RMSE 44.94  (1656s)
+exit 0

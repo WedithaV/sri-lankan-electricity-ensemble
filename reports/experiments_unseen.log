@@ -1,0 +1,8 @@
+[22:52:12] === stage unseen ===
+[22:52:22] unseen       naive_last_month   history_only         test_MAE 19.491 test_RMSE 48.84 (1s)
+[22:52:23] unseen       ridge              history_only         test_MAE 19.859 test_RMSE 43.43 (1s)
+[22:52:37] unseen       ridge              history_plus_survey  test_MAE 20.583 test_RMSE 44.33 (14s)
+[23:05:56] unseen       gradient_boosting  history_only         test_MAE 20.161 test_RMSE 46.96 (799s)
+[23:38:27] unseen       gradient_boosting  history_plus_survey  test_MAE 20.079 test_RMSE 46.94 (1951s)
+[23:51:14] unseen       voting             history_only         test_MAE 19.788 test_RMSE 46.17 (767s)
+exit unseen 0

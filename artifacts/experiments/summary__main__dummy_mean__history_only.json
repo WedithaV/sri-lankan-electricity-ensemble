@@ -1,0 +1,20 @@
+{
+  "experiment": "main",
+  "model_key": "dummy_mean",
+  "label": "dummy_mean",
+  "model": "DummyRegressor (training mean)",
+  "family": "Baseline",
+  "feature_set": "history_only",
+  "cv_MAE": 73.46621129889976,
+  "cv_MAE_std": 5.393275587555353,
+  "cv_RMSE": 129.98049020922198,
+  "cv_R2": -0.007118890332208361,
+  "train_MAE": 67.92436112726755,
+  "test_MAE": 74.19303305420209,
+  "test_RMSE": 131.36624050398987,
+  "test_R2": -0.004082593218409647,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 0.11488242000341416,
+  "fit_seconds_full": 0.12287279998417944,
+  "predict_ms_per_1000_rows": 2.5245297104220366
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "unseen_households",
+  "model_key": "voting",
+  "label": "voting",
+  "model": "Voting Regressor",
+  "family": "Ensemble combination",
+  "feature_set": "history_only",
+  "test_MAE": 19.787550630761825,
+  "test_RMSE": 46.1734678089788,
+  "test_R2": 0.87595282402571,
+  "test_n": 20094,
+  "n_group_folds": 5
+}

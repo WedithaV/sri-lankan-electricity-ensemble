@@ -1,0 +1,6 @@
+[22:52:12] === stage robustness ===
+[22:52:21] robust_R1_excl34 naive_last_month   history_only         cv_MAE 19.786  test_MAE 19.581  test_RMSE 48.96  (0s)
+[23:13:06] robust_R1_excl34 voting             history_only         cv_MAE 18.905  test_MAE 19.764  test_RMSE 45.03  (1245s)
+[23:13:06] R2: dropping 10 isolated-spike training rows (flag computed on training months only)
+[23:31:25] robust_R2_nospikes voting             history_only         cv_MAE 18.786  test_MAE 19.655  test_RMSE 44.95  (1099s)
+exit robustness 0

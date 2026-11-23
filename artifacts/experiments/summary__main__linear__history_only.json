@@ -1,0 +1,20 @@
+{
+  "experiment": "main",
+  "model_key": "linear",
+  "label": "linear",
+  "model": "Linear Regression",
+  "family": "Baseline",
+  "feature_set": "history_only",
+  "cv_MAE": 20.909956651480844,
+  "cv_MAE_std": 3.799683752537062,
+  "cv_RMSE": 44.8709938578809,
+  "cv_R2": 0.8795277536980143,
+  "train_MAE": 18.322241094608305,
+  "test_MAE": 20.617995888439875,
+  "test_RMSE": 44.167100529565275,
+  "test_R2": 0.8864990033254313,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 0.14072290001204238,
+  "fit_seconds_full": 0.1658706000307575,
+  "predict_ms_per_1000_rows": 2.3026624886812
+}

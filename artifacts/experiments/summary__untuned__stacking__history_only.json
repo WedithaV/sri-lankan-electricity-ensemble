@@ -1,0 +1,20 @@
+{
+  "experiment": "untuned",
+  "model_key": "stacking",
+  "label": "stacking",
+  "model": "Stacking (time-ordered, Ridge meta-learner)",
+  "family": "Ensemble combination",
+  "feature_set": "history_only",
+  "cv_MAE": 19.065516848230036,
+  "cv_MAE_std": 2.6869208500132697,
+  "cv_RMSE": 42.267457815826354,
+  "cv_R2": 0.8931346754507008,
+  "train_MAE": 15.828579254629727,
+  "test_MAE": 19.669895204059248,
+  "test_RMSE": 43.63581993207292,
+  "test_R2": 0.8892131593695256,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": NaN,
+  "fit_seconds_full": 167.96456699998816,
+  "predict_ms_per_1000_rows": 26.456011746868874
+}

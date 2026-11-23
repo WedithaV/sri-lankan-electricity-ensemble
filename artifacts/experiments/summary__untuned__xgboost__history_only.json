@@ -1,0 +1,20 @@
+{
+  "experiment": "untuned",
+  "model_key": "xgboost",
+  "label": "xgboost",
+  "model": "XGBoost",
+  "family": "Boosting",
+  "feature_set": "history_only",
+  "cv_MAE": 20.58513658159041,
+  "cv_MAE_std": 2.0692876891637404,
+  "cv_RMSE": 53.67695692784774,
+  "cv_R2": 0.8267676875085179,
+  "train_MAE": 14.348009174102023,
+  "test_MAE": 21.92601306537788,
+  "test_RMSE": 52.91956904457972,
+  "test_R2": 0.8370574557361123,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 0.516019199998118,
+  "fit_seconds_full": 0.5365349000203423,
+  "predict_ms_per_1000_rows": 3.8268040216829977
+}

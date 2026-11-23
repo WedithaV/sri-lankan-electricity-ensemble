@@ -1,0 +1,20 @@
+{
+  "experiment": "ablation",
+  "model_key": "voting",
+  "label": "voting",
+  "model": "Voting Regressor",
+  "family": "Ensemble combination",
+  "feature_set": "history_plus_survey",
+  "cv_MAE": 18.78806029785295,
+  "cv_MAE_std": 2.2355283695540042,
+  "cv_RMSE": 43.01859164731897,
+  "cv_R2": 0.8891374968106472,
+  "train_MAE": 15.841903113304046,
+  "test_MAE": 19.573215880825405,
+  "test_RMSE": 44.944681813865365,
+  "test_R2": 0.8824673533051368,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 259.1579186800169,
+  "fit_seconds_full": 356.1361352999811,
+  "predict_ms_per_1000_rows": 39.576823928410946
+}

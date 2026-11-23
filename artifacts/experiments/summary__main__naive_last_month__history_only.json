@@ -1,0 +1,20 @@
+{
+  "experiment": "main",
+  "model_key": "naive_last_month",
+  "label": "naive_last_month",
+  "model": "Naive: last month's bill",
+  "family": "Baseline",
+  "feature_set": "history_only",
+  "cv_MAE": 19.694654114153543,
+  "cv_MAE_std": 2.4839947750768774,
+  "cv_RMSE": 47.83574082555543,
+  "cv_R2": 0.8614121953732724,
+  "train_MAE": 18.969402222777223,
+  "test_MAE": 19.490543122199124,
+  "test_RMSE": 48.84327643820771,
+  "test_R2": 0.8611929662281353,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 0.003476599999703467,
+  "fit_seconds_full": 0.0013359000440686941,
+  "predict_ms_per_1000_rows": 1.4226983200163212
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "unseen_households",
+  "model_key": "naive_last_month",
+  "label": "naive_last_month",
+  "model": "Naive: last month's bill",
+  "family": "Baseline",
+  "feature_set": "history_only",
+  "test_MAE": 19.490543122199124,
+  "test_RMSE": 48.84327643820771,
+  "test_R2": 0.8611929662281353,
+  "test_n": 20094,
+  "n_group_folds": 5
+}

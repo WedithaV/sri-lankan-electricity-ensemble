@@ -1,0 +1,14 @@
+{
+  "input_rows": 101575,
+  "input_households": 4063,
+  "missing_readings_in_input": 590,
+  "always_zero_households_removed_invalid": 15,
+  "low_activity_households_kept_and_flagged": 19,
+  "output_rows": 101200,
+  "output_households": 4048,
+  "missing_readings_kept_as_nan": 571,
+  "zero_months_kept": 1976,
+  "isolated_spikes_flagged": 18,
+  "household_features_rows": 4063,
+  "household_features_columns": 50
+}

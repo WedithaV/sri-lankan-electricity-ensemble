@@ -1,0 +1,20 @@
+{
+  "experiment": "posthoc_diagnostic",
+  "model_key": "random_forest",
+  "label": "random_forest",
+  "model": "Random Forest",
+  "family": "Bagging",
+  "feature_set": "diag_no_calendar_no_lag12",
+  "cv_MAE": 19.608033169504683,
+  "cv_MAE_std": 3.3624027503997906,
+  "cv_RMSE": 43.311283400662376,
+  "cv_R2": 0.8878977817193953,
+  "train_MAE": 15.20051917562326,
+  "test_MAE": 18.814582560650198,
+  "test_RMSE": 42.78258371643486,
+  "test_R2": 0.8935033581600378,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 5.746531420003157,
+  "fit_seconds_full": 7.06643249996705,
+  "predict_ms_per_1000_rows": 25.19935801863204
+}

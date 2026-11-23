@@ -1,0 +1,14 @@
+[theme]
+base = "light"
+primaryColor = "#0F9D8F"            # teal
+backgroundColor = "#FFFFFF"         # white
+secondaryBackgroundColor = "#F3F5F7" # light gray
+textColor = "#1B2A4A"               # navy
+font = "sans serif"
+
+[server]
+headless = true
+runOnSave = false
+
+[browser]
+gatherUsageStats = false

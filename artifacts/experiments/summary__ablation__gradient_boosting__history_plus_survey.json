@@ -1,0 +1,20 @@
+{
+  "experiment": "ablation",
+  "model_key": "gradient_boosting",
+  "label": "gradient_boosting",
+  "model": "Gradient Boosting",
+  "family": "Boosting",
+  "feature_set": "history_plus_survey",
+  "cv_MAE": 18.859390943051768,
+  "cv_MAE_std": 2.2218792560108094,
+  "cv_RMSE": 43.37273838156081,
+  "cv_R2": 0.8871605948422255,
+  "train_MAE": 16.464975848649733,
+  "test_MAE": 19.979400115133565,
+  "test_RMSE": 45.51935328753999,
+  "test_R2": 0.8794425475506062,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 318.9157608799986,
+  "fit_seconds_full": 408.170040099998,
+  "predict_ms_per_1000_rows": 21.88725489965449
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "unseen_households",
+  "model_key": "gradient_boosting",
+  "label": "gradient_boosting",
+  "model": "Gradient Boosting",
+  "family": "Boosting",
+  "feature_set": "history_plus_survey",
+  "test_MAE": 20.07889265407067,
+  "test_RMSE": 46.94218100693126,
+  "test_R2": 0.871788074313178,
+  "test_n": 20094,
+  "n_group_folds": 5
+}

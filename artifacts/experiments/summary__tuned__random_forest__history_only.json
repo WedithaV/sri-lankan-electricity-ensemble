@@ -1,0 +1,20 @@
+{
+  "experiment": "tuned",
+  "model_key": "random_forest",
+  "label": "random_forest",
+  "model": "Random Forest",
+  "family": "Bagging",
+  "feature_set": "history_only",
+  "cv_MAE": 19.226090115917213,
+  "cv_MAE_std": 2.537237377724933,
+  "cv_RMSE": 42.799141701995474,
+  "cv_R2": 0.8904893882474532,
+  "train_MAE": 14.600034817415846,
+  "test_MAE": 19.601493458576126,
+  "test_RMSE": 43.67970293351406,
+  "test_R2": 0.8889902185060813,
+  "test_n": 20094,
+  "cv_fit_seconds_mean": 4.458880579995457,
+  "fit_seconds_full": 6.255766700021923,
+  "predict_ms_per_1000_rows": 14.747282770842668
+}
