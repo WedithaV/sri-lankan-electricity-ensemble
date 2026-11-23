@@ -4,6 +4,8 @@ Predicting a Sri Lankan household's **next monthly electricity bill (kWh)** with
 **Stacking** ensembles, on the **RECON-SL** dataset (LIRNEasia & Lanka Electricity Company), and comparing them
 honestly against simple baselines. Includes a Streamlit dashboard.
 
+**Live dashboard:** https://sri-lankan-electricity-ensemble-hzjaqqr8tcbiznytjw3hhz.streamlit.app/
+
 > University assignment (Ensemble Learning). AI assistance is disclosed in [`AI_DECLARATION.md`](AI_DECLARATION.md).
 
 ---
